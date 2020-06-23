@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/panel_admin.css" type="text/css">
+    
+</head>
+
+<body onload="load_list_of_users(), get_date()">
+
+    <header>
+
+        <div id="h1_container"><h1 class="panel_h1">Delilah Restó<small id="date_container"></small></h1></div>
+       
+        <!-- Dropdown Trigger -->
+        <a id="menu_trigger" class='dropdown-trigger' href='#' data-target='dropdown3'>&#9776;</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown3' class='dropdown-content dropdown_container'>
+            <li><a href="#!">x</a></li>
+            <li><a onclick="go_to_panel_admin()" href="#!">PEDIDOS</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a href="#!">USUARIOS</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a onclick="go_to_crud()" href="#!">PRODUCTOS</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a onclick="go_to_login()" href="#!">Cerrar sesión</a></li>
+        </ul> 
+       
+       
+        <!-- <div id="btns_container">
+            <button onclick="go_to_panel_admin()" id="pedidos_btn">PEDIDOS</button>
+            <button id="users_btn">USUARIOS</button>
+            <button onclick="go_to_crud()" id="productos_btn">PRODUCTOS</button>
+        </div> -->
+
+    </header>
+
+    <table class="striped responsive-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>USUARIO</th>
+                <th>NOMBRE Y APELLIDO</th>
+                <th>EMAIL</th>
+                <th>TELÉFONO</th>
+                <th>DIRECCIÓN</th>
+                <th>ROLE</th>
+            </tr>
+        <tbody id="users_table">
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/get_all_users.js"></script>
+
+</body>
+
+</html>

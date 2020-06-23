@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Maria Cristina Tovar">
+	<meta name="description" content="Delilah Restó">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css">
+    
+</head>
+
+<body>
+
+    <header id="login_header">
+        <h1 id="login_h1">Delilah Restó</h1>
+    </header>
+
+    <div class="form_container">
+        <form>
+            <div class="form_item">
+                <label>Usuario o correo electrónico</label>
+                <input type="text" id="username_bar_login" class="browser-default">
+                <div id="wrong_user_div" class="warning_div">El usuario no existe</div>
+            </div>
+            <div class="form_item">
+                <label>Contraseña</label>
+                <input type="password" id="password_bar_login" class="browser-default"> 
+                <div id="wrong_password_div" class="warning_div"><!--La contraseña es incorrecta-->La contraseña o usuario es incorrecto</div> 
+                <div id="fields_required_div" class="warning_div">Es necesario rellenar todos los campos</div>
+            </div>
+        </form>
+    </div>
+    
+    <div class="flex_container_btns login">
+        <div class="btns_container">
+            <button onclick="user_login()" class="orange_btn">INICIAR SESIÓN</button><br>
+            <button onclick="go_to_sign_up()" class="white_btn">REGISTRARSE</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/variables.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

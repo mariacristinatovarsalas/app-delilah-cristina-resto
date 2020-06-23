@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/crud.css" type="text/css">
+
+</head>
+
+<body onload="get_all_products()">
+
+    <header>
+        <h1>Delilah Restó</h1>
+    </header>
+
+    <div>
+        <button onclick="create_product()" id="create_product_btn" class="orange_btn">CREAR PRODUCTO</button>
+        <div id="div_create_product_bars">
+            <input type="text" id="create_product_name_bar" class="browser-default create_bars" placeholder="name"></input>
+            <input type="text" id="create_product_price_bar" class="browser-default create_bars" placeholder="price"></input>
+            <input type="text" id="create_product_url_bar" class="browser-default create_bars" placeholder="url imagen"></input>
+            <input type="text" id="create_product_code_bar" class="browser-default create_bars" placeholder="code"></input>
+            <button onclick="cancel_create_product()" class="cancelar_btn">cancelar</button>
+        </div>
+    </div>
+
+    <small>Nuestros platos</small>
+    <div id="products_container"></div>
+    
+    <div class="flex_container_btns">
+        <div class="btns_container">
+            <button onclick="go_to_get_all_users()" class="orange_btn white-text">USUARIOS</button>
+            <button onclick="go_to_panel_admin()" class="white_btn">PEDIDOS</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/crud.js"></script>
+
+</body>
+
+</html>

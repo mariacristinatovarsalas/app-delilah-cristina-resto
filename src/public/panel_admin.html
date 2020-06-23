@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/panel_admin.css" type="text/css">
+
+</head>
+
+<body onload="load_admin_panel(), get_date()">
+
+    <header>
+
+        <div id="h1_container">
+            <h1 class="panel_h1">Delilah Restó<small id="date_container"></small></h1>
+        </div>
+
+        <!-- Dropdown Trigger -->
+        <a id="menu_trigger" class='dropdown-trigger' href='#' data-target='dropdown2'>&#9776;</a>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown2' class='dropdown-content dropdown_container'>
+            <li><a id="pedidos_btn" href="#!">x</a></li>
+            <li><a href="#!">PEDIDOS</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a onclick="go_to_get_all_users()" href="#!">USUARIOS</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a onclick="go_to_crud()" href="#!">PRODUCTOS</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a onclick="go_to_login()" href="#!">Cerrar sesión</a></li>
+        </ul>
+
+    </header>
+
+    <table class="striped responsive-table">
+        <thead>
+            <tr>
+                <th>ESTADO</th>
+                <th>HORA</th>
+                <th>NÚMERO</th>
+                <th class="fixed_width">DESCRIPCIÓN</th>
+                <th>PAGO</th>
+                <th>USUARIO</th>
+                <th>DIRECCIÓN</th>
+                <th></th>
+            </tr>
+        <tbody id="panel_admin_table">
+    </table>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/panel_admin.js"></script>
+
+</body>
+
+</html>

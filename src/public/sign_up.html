@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="author" content="Maria Cristina Tovar">
+	<meta name="description" content="Delilah Restó">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    
+</head>
+
+<body>
+
+    <header>
+        <h1>Delilah Restó</h1>
+    </header>
+
+    <div id="form_container_sign_up" class="form_container">
+        <form>
+            <div class="form_item form_item_sign_up">
+                <label>Usuario</label>
+                <input type="text" id="username_bar" class="browser-default">
+                <div id="user_already_exists_div" class="warning_div">El usuario ya está registrado</div>
+            </div>
+            <div class="form_item form_item_sign_up">
+                <label>Nombre y Apellido</label>
+                <input type="text" id="fullname_bar" class="browser-default">
+            </div>
+            <div class="form_item form_item_sign_up">
+                <label>Correo electrónico</label>
+                <input type="email" id="email_bar" class="browser-default">
+                <div id="email_already_exists_div" class="warning_div">El email ya está registrado</div>
+            </div>
+            <div class="form_item form_item_sign_up">
+                <label>Teléfono</label>
+                <input type="number" id="phonenumber_bar" class="browser-default">
+            </div>
+            <div class="form_item form_item_sign_up">
+                <label>Dirección de envío</label>
+                <input type="text" id="address_bar" class="browser-default">
+            </div>
+            <div class="form_item form_item_sign_up">
+                <label>Contraseña</label>
+                <input type="password" id="password_bar" class="browser-default">
+                <div id="fields_required_div" class="warning_div">Es necesario rellenar todos los campos</div>
+            </div>
+        </form>
+    </div>
+
+    <div class="flex_container_btns">
+        <div id="btns_container_sign_up" class="btns_container">
+            <button onclick="create_user()" class="orange_btn">CREAR CUENTA</button><br>
+            <button onclick="go_to_login()" class="white_btn">INICIAR SESIÓN</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/sign_up.js"></script>
+    
+
+</body>
+
+</html>

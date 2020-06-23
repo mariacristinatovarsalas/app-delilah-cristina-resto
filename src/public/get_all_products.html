@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+
+</head>
+
+<body onload="get_all_products()">
+    
+    <header>
+        
+         <!-- Dropdown Trigger -->
+        <a id="menu_trigger" class='dropdown-trigger' href='#' data-target='dropdown1'>&#9776;</a>
+
+        <h1>Delilah Restó</h1>
+
+        <!-- Dropdown Structure -->
+        <ul id='dropdown1' class='dropdown-content dropdown_container'>
+            <li><a href="#!">x</a></li>
+            <li><a onclick="go_to_order_status()" href="#!">Mi pedido</a></li>
+            <li class="divider" tabindex="-1"></li>
+            <li><a onclick="go_to_login()" href="#!">Cerrar sesión</a></li>
+        </ul>   
+    
+    </header>
+
+    <small>Favoritos</small>
+
+    <div class="carousel center carousel_container">
+        <div class="carousel-item" href="#one!">
+          <img class="carousel_img" src="https://cdn.kiwilimon.com/recetaimagen/16320/th5-640x426-8269.jpg">
+        </div>
+        <div class="carousel-item" href="#two!">
+          <img class="carousel_img" src="https://www.innaturale.com/cdn-cgi/image/www.innaturale.com/es/wp-content/webp-express/webp-images/doc-root/es/wp-content/uploads/2018/03/Hamburguesa-perfecta.jpg.webp">
+        </div>
+        <div class="carousel-item" href="#three!">
+           <img class="carousel_img" src="https://assets.tmecosys.com/image/upload/t_web600x528/img/recipe/ras/Assets/ffe79fd5-f498-4b89-a2ea-bea00b81ed57/Derivates/8eb8e221-11db-4a8d-b701-59b24aebbfb1.jpg">
+        </div>
+        <div class="carousel-item" href="#four!">
+           <img class="carousel_img" src="https://cookieandkate.com/images/2018/02/chopped-greek-salad-with-homemade-greek-vinaigrette-550x824.jpg">
+        </div>
+    </div>
+
+    <div class="screen_container">
+    
+        <div class="screen">
+
+    <small>Nuestros platos</small>
+    <div id="products_container"></div>
+
+    </div>
+
+    </div>
+
+    
+
+    <div class="flex_container_btns">
+        <div class="btns_container">
+            <button onclick="see_order_btn()" class="orange_btn">SIGUIENTE</button>
+            <button onclick="go_to_get_all_products()" class="white_btn">CANCELAR</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="js/get_all_products.js"></script>
+
+</body>
+
+</html>

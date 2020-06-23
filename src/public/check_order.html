@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    <script src="./js/auth.js"></script>
+</head>
+
+<body onload="get_ordered_products_array()">
+
+    <header>
+        
+        <!-- Dropdown Trigger -->
+       <a id="menu_trigger" class='dropdown-trigger' href='#' data-target='dropdown1'>&#9776;</a>
+
+       <h1>Delilah Restó</h1>
+
+       <!-- Dropdown Structure -->
+       <ul id='dropdown1' class='dropdown-content dropdown_container'>
+           <li><a href="#!">x</a></li>
+           <li><a onclick="go_to_order_status()" href="#!">Mi pedido</a></li>
+           <li class="divider" tabindex="-1"></li>
+           <li><a onclick="go_to_login()" href="#!">Cerrar sesión</a></li>
+       </ul>   
+   
+   </header>
+
+    <div class="screen_container">
+    
+    <div class="screen">
+    
+    <small id="check_order_small_detalles">Detalles</small>
+    <div id="ordered_products_container"></div>
+    <div id="total_div"></div>
+    <small id="check_order_small_formapago">Forma de pago</small>
+
+    <div id="check_order_payment_container">
+
+        <select id="payment_method_select" class="browser-default">
+            <option value="1" id="1">Efectivo</option>
+            <option value="2" id="2">Débito</option>
+            <option value="3" id="3">Crédito</option>
+        </select>
+
+    </div>
+
+    <small id="check_order_small_address">Dirección<button onclick="btn_change_order_address()" class="white_btn" id="change_address_btn">CAMBIAR DIRECCIÓN</button></small>
+    <div id="address_div"></div>
+    <input type="text" id="current_address_div" class="browser-default"></input>
+   
+    <div id="no_product_img_container">
+        <img id="no_product_img" src="https://appstickers-cdn.appadvice.com/1275100934/823427578/26aae1a0488a9c2e93ce0a731546f50b-5.png">
+    </div>
+    <div id="warning_no_product_ordered">¡No ha ordenado ningún producto!</div>
+
+    <div id="check_order_flex_container_btns" class="flex_container_btns">
+        <div class="btns_container" id="btns_container_check_order">
+            <button onclick="make_order()" id="confirm_order_btn" class="orange_btn">CONFIRMAR PEDIDO</button>
+            <button onclick="go_to_get_all_products()" id="remake_order_btn" class="white_btn orange_btn">HACER PEDIDO</button>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/variables.js"></script>
+    <script src="./js/check_order.js"></script>
+
+</body>
+
+</html>

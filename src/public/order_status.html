@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    
+</head>
+
+<body onload="check_order_status()">
+
+    <header>
+        
+        <!-- Dropdown Trigger -->
+       <a id="menu_trigger" class='dropdown-trigger' href='#' data-target='dropdown1'>&#9776;</a>
+
+       <h1>Delilah Restó</h1>
+
+       <!-- Dropdown Structure -->
+       <ul id='dropdown1' class='dropdown-content dropdown_container'>
+           <li><a href="#!">x</a></li>
+           <li><a onclick="go_to_order_status()" href="#!">Mi pedido</a></li>
+           <li class="divider" tabindex="-1"></li>
+           <li><a onclick="go_to_login()" href="#!">Cerrar sesión</a></li>
+       </ul>   
+   
+   </header>
+
+    <div class="screen_container"
+>
+    
+    <div class="screen">
+
+    <small>Estado</small><br>
+    
+    <div id="progress_div_container">
+
+        <div class="progress_div">  
+            <div id="div_circle_confirmado" class="progress_div_circle"></div>
+            <div id="div_status_confirmado" class="progress_div_status">Confirmado</div>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="progress_div">  
+            <div id="div_circle_preparando" class="progress_div_circle"></div>
+            <div id="div_status_preparando" class="progress_div_status">En preparación</div>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="progress_div">  
+            <div id="div_circle_enviando" class="progress_div_circle"></div>
+            <div id="div_status_enviando" class="progress_div_status">En camino</div>
+        </div>
+
+        <div class="connector"></div>
+
+        <div class="progress_div">  
+            <div id="div_circle_entregado" class="progress_div_circle"></div>
+            <div id="div_status_entregado" class="progress_div_status">Entregado</div>
+        </div>
+    
+    </div>
+
+    <small>Detalle</small>
+
+    <div id="ordered_products_container"></div>
+    <div id="total_div"></div>
+    <small>Forma de pago</small>
+    <div id="payment_method_div"></div>
+    <small>Dirección</small>
+    <div id="address_div"></div>
+
+    <div class="flex_container_btns">
+        <div class="btns_container">
+            <button onclick="go_to_get_all_products()" class="orange_btn">OTRO PEDIDO</button>
+        </div>
+    </div>
+    
+    </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    <script src="js/variables.js"></script>
+    <script src="js/order_status.js"></script>
+
+</body>
+
+</html>

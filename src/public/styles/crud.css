@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* MOBILE VERSION <---------------------------------------------------------------------------------------------- */
+
+/* CRUD <------------------------------------------ */
+
+header {
+    margin-bottom: 1vh;
+    height: 9vh;
+    background-color: #1eb2a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+h1 {
+    margin: 0;
+    font-size: 7vw;
+    font-weight: bold;
+    color: white;
+}
+
+button {
+    width: 40vw;
+    height: 9vw;
+    border-radius: 29px;
+    font-size: 3.5vw;
+    background-color: #FF7F50;
+}
+
+#create_product_btn {
+    margin: 1vh 0 1vh 2vw;
+    width: 30vw;
+    font-size: 2.8vw;
+    font-weight: bold;
+    color: white;
+}
+
+#div_create_product_bars {
+    padding-left: 3vw;
+    margin: 1vw 0 1vw 0;
+    display: none;
+}
+
+input {
+    width: 92vw;
+    height: 5vh;
+    padding-left: 1vw;
+    margin-bottom: 1.5vw;
+    font-size: 4vw;
+    border: 1px solid lightgray;
+}
+
+.cancelar_btn {
+    width: 17vw;
+    height: 6vw;
+    font-size: 3vw;
+    color: white; 
+}
+
+small {
+    margin-left: 3.5vw;
+    height: 1vw;
+    font-weight: 700;
+    font-size: 4vw;
+    color: #2F4F4F;
+}
+
+#products_container {
+    margin-bottom: 7vw;
+}
+
+.product_container {
+    width: 98vw;
+    height: 17vw;
+    margin-top: 2vw;
+    display: inline-block;
+}
+
+.product_name {
+    margin: 3vw 0 0 22vw;
+    color: #2F4F4F;
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+}
+
+.product_price {
+    font-size: 4vw;
+    margin: 8vw 0 0 22vw;
+    position: absolute;
+}
+
+.product_img {
+    width: 17vw;
+    height: 16vw;
+    margin: 0 0 0 3.5vw;
+    position: absolute;
+}
+
+.product_btn {
+    width: 10vw;
+    height: 10vw;
+    margin: 4.2vw 0 0 84vw;
+    font-size: 10vw;
+    background-color: #FF7F50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.update_product_btn {
+    margin: 4.2vw 0 0 72vw;
+    background-color: #1eb2a6;
+    position: absolute;
+}
+
+.update_bars_div {
+    width: 94vw;
+    margin: 5vw 0 1vw 3vw;
+    display: none;
+}
+
+.flex_container_btns {
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btns_container {
+    width: 41vw;
+    display: inline-block;
+}
+
+.white_btn {
+    color: #FF7F50;
+    background: transparent;
+}
+
+/* TABLET VERSION <------------------------------------------------------------------------------------------ */
+
+@media only screen and (min-width: 500px) {
+
+    header {
+        height: 17vw;
+    }
+
+    #create_product_btn {
+        height: 6vw;
+        font-size: 2vw;
+    }
+
+    input {
+        font-size: 2.4vw;
+    }
+
+    .cancelar_btn {
+        width: 11vw;
+        height: 4vw;
+        font-size: 2.2vw;
+    }
+
+    .product_name {
+        font-size: 4vw;
+    }
+
+    .product_price {
+        font-size: 4vw;
+    }
+
+    .product_btn {
+        width: 9vw;
+        height: 9vw;
+    }
+
+    .update_product_btn {
+        margin: 4vw 0 0 78vw;
+    }
+    
+    
+    .delete_product_btn {
+        margin-left: 88vw;
+    }
+
+}
+
+/* DESKTOP VERSION <--------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 800px) {
+
+    header {
+        margin-bottom: 1vw;
+        height: 7vw;
+    }
+    
+    h1 {
+        font-size: 3.5vw;
+    }
+    
+    button {
+        width: 12vw;
+        height: 3vw;
+        font-size: 1vw;
+    }
+    
+    #create_product_btn {
+        width: 13vw;
+        height: 2.5vw;
+        font-size: 1vw;
+        margin-left: 3vw;
+    }
+    
+    #div_create_product_bars {
+        padding-left: 3vw;
+        margin-top: 2vh;
+    }
+    
+    input {
+        width: 15vw;
+        height: 2vw;
+        margin: 0 1vw 1vw 0; 
+        padding-left: 0.5vw;
+        font-size: 1.2vw;
+    }
+    
+    .cancelar_btn {
+        width: 5vw;
+        height: 1.5vw;
+        font-size: 1vw;  
+        margin: 0;
+    }
+    
+    small {
+        font-size: 1.5vw;
+    }
+    
+    .product_container {
+        height: 8.5vw;
+        margin-top: 1vw;
+    }
+    
+    .product_name {
+        margin: 2vw 0 0 12.5vw;
+        font-size: 2vw;
+    }
+    
+    .product_price {
+        font-size: 1.5vw;
+        margin: 4.2vw 0 0 12.5vw;
+    }
+    
+    .product_img {
+        width: 8vw;
+        height: 8vw;
+        margin: 1vh 0 0 3.5vw;
+    }
+    
+    .product_btn {
+        width: 3.5vw;
+        height: 3.5vw;
+        margin-top: 2vw;
+        font-size: 10vw;
+    }
+    
+    .update_product_btn {
+        margin: 2vw 0 0 88vw;
+    }
+    
+    .update_bars_div {
+        width: 94vw;
+        height: 2.5vw;
+        margin: 3vw 0 0vw 3.5vw;
+    }
+    
+    .delete_product_btn {
+        margin-left: 92vw;
+    }
+
+    .btns_container {
+        width: 15vw;
+    }
+
+}

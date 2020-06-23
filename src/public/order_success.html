@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Delilah Restó</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2:400,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+    
+</head>
+
+<body>
+
+    <header>
+        
+        <!-- Dropdown Trigger -->
+       <a id="menu_trigger" class='dropdown-trigger' href='#' data-target='dropdown1'>&#9776;</a>
+
+       <h1>Delilah Restó</h1>
+
+       <!-- Dropdown Structure -->
+       <ul id='dropdown1' class='dropdown-content dropdown_container'>
+           <li><a href="#!">x</a></li>
+           <li><a onclick="go_to_order_status()" href="#!">Mi pedido</a></li>
+           <li class="divider" tabindex="-1"></li>
+           <li><a onclick="go_to_login()" href="#!">Cerrar sesión</a></li>
+       </ul>   
+   
+   </header>
+
+
+    <div class="success_img_container">
+            <img src="https://estaticos.muyinteresante.es/media/cache/760x570_thumb/uploads/images/article/55365cd73787b2187a1f0790/portada.jpg" alt="Food Table" class="success_img">
+    </div>
+
+    <h2>¡Recibimos tu pedido!</h2>
+    <div id="div_p"><p>Gracias por pedir a Delilah<br>Puedes seguir tu pedido para saber donde está.</p></div>
+    
+    <div class="flex_container_btns">
+        <div class="btns_container">
+            <button onclick="go_to_order_status()" class="orange_btn">SEGUIR PEDIDO</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+    <script src="js/variables.js"></script>
+    <script src="js/order_success.js"></script>
+
+</body>
+
+</html>

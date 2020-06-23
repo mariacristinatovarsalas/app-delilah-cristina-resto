@@ -1,0 +1,803 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+/* MOBILE VERSION <------------------------------------------------------------------------------------------ */ 
+
+.screen {
+    width: 100%;
+}
+
+.screen_container {
+    width: 100vw;
+    display: flex;
+    justify-content: center; 
+}
+
+/* LOGIN <------------------------------------------------ */
+
+#login_header {
+    height: 25vh;
+}
+
+#login_h1 {
+    font-size: 9vw;
+}
+
+.form_container {
+    height: 35vh;
+    margin-top: 7vh;
+    display: flex;
+    justify-content: center;
+}
+
+.form_item {
+    margin-bottom: 4vh;
+}
+
+label {
+    margin-bottom: 0.5vh; 
+    color: grey;
+    text-align: left;
+    display: block;
+}
+
+input {
+    border: 1px solid lightgrey;
+    width: 80vw;
+    height: 6vh;
+}
+
+.flex_container_btns {
+    margin-bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.btns_container {
+    width: 36vw;
+    display: inline-block;
+}
+
+button {
+    width: 37vw;
+    height: 7vw;
+    border-radius: 29px;
+    font-size: 3vw;
+    font-family: 'Baloo Chettan 2', cursive;
+    background-color: #FF7F50;
+}
+
+.orange_btn {
+    color: white;
+}
+
+.white_btn {
+    color: #FF7F50;
+    background: transparent;
+}
+
+.warning_div {
+    width: 80vw;
+    height: 3vh;
+    text-align: left;
+    color: red;
+    display: none;
+}
+
+/* SIGN UP <-------------------------------------------------- */
+
+header {
+    margin-bottom: 1vh;
+    height: 13vh;
+    background-color: #1eb2a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+h1 {
+    margin: 0;
+    font-size: 7vw;
+    font-weight: bold;
+    color: white;
+} 
+
+#form_container_sign_up {
+    height: 65vh;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+.form_item_sign_up {
+    margin-bottom: 1vh;
+}
+
+
+/* GET ALL PRODUCTS <----------------------------------------- */ 
+
+#menu_trigger {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 7vw;
+    margin-left: -42vw;
+    position: absolute;
+}
+
+.dropdown_container {
+    width: 200px !important
+}
+
+small {
+    margin-left: 3.5vw;
+    font-weight: 700;
+    font-size: 4vw;
+    color: #2F4F4F;
+}
+
+.carousel_container {
+    margin-left: 2vw;
+    width: 96%;
+    height: 55vw;
+    border: 3px solid lightgray;
+    border-radius: 13px;
+    background-color: #9DEEE5;
+}
+
+.carousel_img {
+    height: inherit;
+    border-radius: 13px;
+}
+
+#products_container {
+    margin-bottom: 7vw;
+}
+
+.product_container {
+    width: 95vw;
+    height: 20vw;
+    display: flex;
+}
+
+.product_name {
+    margin: 3vw 0 0 22vw;
+    color: #2F4F4F;
+    font-size: 5vw;
+    font-weight: 500;
+    position: absolute;
+}
+
+.product_price {
+    font-size: 4vw;
+    margin: 8vw 0 0 22vw;
+    position: absolute;
+}
+
+.product_img {
+    width: 17vw;
+    height: 16vw;
+    margin: 1vh 0 0 3.5vw;
+    position: absolute;
+}
+
+.product_btn {
+    width: 9vw;
+    height: 9vw;
+    margin: 2vh 0 0 84vw;
+    font-size: 6vw;
+    background-color: #FF7F50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.div_cant {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-top: 0.5vw;
+    font-size: 2.5vw;
+    color: white;
+    background-color: #1eb2a6;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+
+/* CHECK ORDER <--------------------------------------------- */
+
+.div_cant_order_check {
+    margin: 12.5vw 0 0 22vw;
+}
+
+.div_total {
+    margin: 1vw 0 2vh 3vw;
+    font-weight: bold;
+    font-size: 5vw;
+    color: #2F4F4F;
+}
+
+select {
+    width: 27vw;
+    height: 7vw;
+    margin: 0 0 1vh 3.5vw;
+    padding: 0;
+    border: 1px solid gray;
+    font-size: 3vw;
+}
+
+#address_div {
+    margin: 0 0 7vw 3.5vw;
+    font-size: 4.5vw;
+}
+
+#current_address_div {
+    margin: 0 0 8vw 3.5vw;
+    width: 93vw;
+    display: none;
+}
+
+#change_address_btn {
+    margin: 0 0 0vw 2vw;
+    width: 30vw;
+    height: 6vw;
+}
+
+.order_remake_btn {
+    color: white;
+}
+
+#remake_order_btn {
+    margin-left: 4vw;
+    width: 28vw;
+    height: 7vw;
+    font-size: 3vw;
+}
+
+#no_product_img {
+    margin-top: 7vw;
+    width: 80vw;
+    height: 80vw;
+}
+
+#warning_no_product_ordered {
+    text-align: center;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: -3vh 0 5vw 0;
+    display: none;
+}
+
+#no_product_img_container {
+    display: none;
+    text-align: center;
+}
+
+
+/* ORDER SUCCESS <------------------------------------------- */
+
+.success_img_container {
+    margin: 18vw 0 8vw 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.success_img {
+    width: 50vw;
+    height: 50vw;
+    border-radius: 130px;
+    border: 8px solid #1eb2a6;
+}
+
+h2 {
+    margin: 3vh 0 1vh 0;
+    font-size: 6vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    width: 60vw;
+    margin-bottom: 6vh;
+    text-align: center;
+    display: inline-block;
+}
+
+#div_p {
+    font-size: 4.5vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* ORDER STATUS <------------------------------------------- */
+
+#payment_method_div {
+    margin: 0 0 2vh 4vw;
+    font-size: 4.6vw;
+}
+
+#progress_div_container {
+    margin: 1vh 0 5vw 0;
+}
+
+.progress_div {
+    width: 39vw;
+    margin-left: 3vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress_div_status {
+    width: 30vw;
+    font-size: 4.5vw;
+}
+
+.progress_div_circle {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 28px;
+    border: 3px solid grey;
+    margin: 0.6vw 0 0 0.5vw;
+}
+
+.status_circle_on {
+    background-color: #FF7F50;
+    border: #FF7F50;
+}
+
+.connector {
+    width: 1vw;
+    height: 1.5vw;
+    margin: 0 0 -1.2vw 6.3vw;
+    background-color: transparent;
+}
+
+
+
+
+
+
+
+/* TABLET VERSION <--------------------------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 600px) {
+
+    #login_h1 {
+        font-size: 5.5vw;
+    }
+
+    .orange_btn {
+       font-size: 2vw;
+       width: 22vw;
+       height: 5vw;
+    }
+    
+    .white_btn {
+        font-size: 2vw;
+        width: 22vw;
+        height: 5vw;
+    }
+
+    .btns_container {
+        text-align: center;
+    }
+    
+    /* GET ALL PRODUCTS <------------------------------------- */
+
+    header {
+        height: 17vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    #menu_trigger {
+        font-size: 4.5vw;
+        margin-left: -44vw;
+    }
+
+    small {
+        font-size: 3vw;
+    }
+
+    .carousel_container {
+        width: 100%;
+        height: 35vw;
+        margin-left: 0;
+        border-radius: 0;
+    }
+
+    .product_name {
+        font-size: 3.5vw;
+    }
+
+    .product_price {
+        font-size: 3.5vw;
+    }
+
+    .product_btn {
+        width: 7vw;
+        height: 7vw;
+        margin: 4vw 0 0 85vw;
+        font-size: 5vw;
+    }
+
+    .div_cant {
+        width: 4vh;
+        height: 4vh;
+        font-size: 2.5vh;
+    }
+
+    #no_product_ordered_warning {
+        font-size: 3vw;
+    }
+
+
+    /* CHECK ORDER <----------------------------------------- */
+
+    .div_total {
+        margin: 1vw 0 2vh 3.5vw;
+        font-size: 3.5vw;
+    }
+
+    select {
+        width: 20vw;
+        height: 7vh;
+        margin: 0 0 1vh 3.5vw;
+        font-size: 3vw;
+        font-family: 'Baloo Chettan 2', cursive;
+    }
+
+    #address_div {
+        margin-left: 3.5vw;
+        margin-bottom: 5vw;
+        font-size: 3.5vw;
+    }
+    
+    #change_address_btn {
+        width: 25vw;
+        height: 4vh;
+        font-size: 2.2vw;
+    }
+
+    #current_address_div {
+        width: 50vw;
+    }
+
+    #no_product_img {
+        margin-top: 2vw;
+        width: 50vw;
+        height: 50vw;
+    }
+    
+    #warning_no_product_ordered {
+        font-size: 3vw;
+    }
+
+    #remake_order_btn {
+        width: 18vw;
+        height: 4vw;
+        margin-left: 0;
+        width: 16vw;
+        font-size: 2vw;
+    }
+    
+
+    /* ORDER SUCCESS ---------------------------------------- */
+
+    .success_img_container {
+        margin: 9vh 0 5vh 0;
+    }
+
+    .success_img {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 180px;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+    
+    #div_p {
+        font-size: 3.5vw;
+    }
+
+    /* ORDER STATUS <----------------------------------- */
+
+    .connector {
+        background: transparent;
+        height: 0vw;
+    }
+
+    .progress_div {
+        height: 4vh;
+        margin-bottom: 3vw;
+    }
+
+    .progress_div_status {
+        font-size: 3.3vw; 
+    }
+
+    .progress_div_circle {
+        width: 3.5vw;
+        height: 3.5vw; 
+    }
+
+    #payment_method_div {
+        margin: 0 0 2vh 3.5vw;
+        font-size: 3.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+/* DESKTOP VERSION <--------------------------------------------------------- */
+
+@media only screen and (min-width: 800px) {
+
+     /* LOGIN <----------------------------------------------- */
+
+     #login_header {
+        height: 25vh;
+    }
+
+    #login_h1 {
+        font-size: 4.5vw;
+    }
+
+    .form_container {
+        height: 28vh;
+    }
+
+    .login {
+        margin-top: 3vw;
+    }
+
+    input {
+        width: 28vw;
+    }
+
+    .warning_div {
+        width: 30vw;
+    }
+    
+    button {
+        width: 5vw;
+        height: 3vw;
+        font-size: 1.3vw;
+    }
+
+    .orange_btn {
+        width: 13vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
+    }
+
+    .white_btn {
+        width: 13vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
+    }
+
+
+    /* SIGN UP <--------------------------------------------------- */
+
+    header {
+        height: 16vh;
+    }
+
+    h1 {
+        font-size: 3.5vw;
+    }
+
+    #form_container_sign_up {
+        height: 65vh;
+        margin-top: 3vh;
+    }
+   
+    #success_user_btn {
+        width: 15vw;
+        height: 3.5vw;
+        font-size: 1.4vw;
+        margin: 0;
+    }
+
+    /* GET ALL PRODUCTS <----------------------------------------- */
+
+    small {
+        font-size: 2.3vw;
+    }
+
+    #menu_trigger {
+        font-size: 2.5vw;
+        margin-left: -44vw;
+    }
+
+    .carousel_container {
+        width: 100%;
+        height: 30vh;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    
+    .product_container {
+        height: 18vh;
+    }
+    
+    .product_name {
+        font-size: 3.5vh;
+        margin: 4vh 0 0 22vh;
+    }
+    
+    .product_price {
+        font-size: 2.8vh;
+        margin: 8vh 0 0 22vh;
+    }
+    
+    .product_img {
+        width: 16vh;
+        height: 16vh;
+        margin: 1vh 0 0 4.5vh;
+    }
+    
+    .product_btn {
+        width: 4vw;
+        height: 4vw;
+        margin: 4vh 0 0 53vw;
+        font-size: 3vw;
+    } 
+
+    .btns_container {
+        width: 20vw;
+    }
+
+    .div_cant {
+        width: 3vh;
+        height: 3vh;
+        font-size: 2vh;
+    }
+
+    #no_product_ordered_warning {
+        font-size: 2vw;
+    }
+
+    /* CHECK ORDER <----------------------------------------------- */
+
+    .screen {
+        width: 60vw;
+    }
+
+    .screen_container {
+        display: flex;
+        justify-content: center;
+       
+    }
+
+    .product_container {
+        width: 60vw;
+    }
+
+    small {
+        margin-left: 4.5vh;
+        font-size: 1.7vw;
+    }
+
+    .div_total {
+        margin: 1vw 0 2vh 4.5vh;
+        font-size: 1.7vw;
+    }
+
+    select {
+        width: 15vw;
+        height: 3vw;
+        margin: 0 0 1vh 4.5vh;
+        padding: 0 0.5vw;
+        font-size: 1.5vw;
+        font-family: 'Baloo Chettan 2', cursive;
+    }
+
+    #address_div {
+        margin: 0 0 4.5vw 4.5vh;
+        font-size: 1.5vw;
+    }
+
+    .div_cant_order_check {
+        margin: 12vh 0 0 22vh;
+    }
+
+    #change_address_btn {
+        margin-left: 0vw;
+        width: 16vw;
+        height: 4vh;
+        font-size: 1.3vw;
+    }
+
+    #current_address_div {
+        margin: 0 0 8vw 4vw;
+        display: none;
+    }
+
+    #no_product_img {
+        width: 30vw;
+        height: 30vw;
+        margin-top: 0;
+    }
+    
+    #warning_no_product_ordered {
+        font-size: 2vw;
+        margin: -4vw 0 2vw 0;
+    }
+
+    #remake_order_btn {
+        margin-left: 0;
+        width: 16vw;
+        font-size: 1.2vw;
+    }
+
+
+    /* ORDER SUCCESS <----------------------------------------- */
+
+    .success_img_container {
+        margin: 3vw 0 1vw 0;
+    }
+
+    .success_img {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    h2 {
+        font-size: 2vw;
+    }
+    
+    #div_p {
+        font-size: 1.5vw;
+    }
+    
+    /* ORDER STATUS <------------------------------------------- */
+
+    #payment_method_div {
+        margin: 0 0 2vh 4.5vh;
+        font-size: 1.5vw;
+    }
+
+    #progress_div_container {
+        margin: 1vh 0 3vw 0;
+    }
+    
+    .progress_div {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .progress_div_status {
+        font-size: 1.9vw;
+    }
+    
+    .progress_div_circle {
+        width: 2.3vw;
+        height: 2.3vw;
+        margin-top: 0.4vw;
+        border-radius: 28px;
+        border: 3px solid grey;
+    }
+
+}
