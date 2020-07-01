@@ -30,7 +30,7 @@ module.exports.make_order = async (
           total_order,
           address,
           id_payment,
-          1,
+          2,
           time,
           date,
           description,
