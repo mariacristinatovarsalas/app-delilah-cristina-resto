@@ -59,7 +59,7 @@ const create_user = async () => {
     
         if (data.msg == "Username already exists") {
             document.getElementById("user_already_exists_div").style.display = "block"
-            document.getElementById("email_already_exists_div").style.display = "block"
+            document.getElementById("email_already_exists_div").style.display = "none"
         }
 
         if (data.msg == "Email already exists") {
