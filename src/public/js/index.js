@@ -1,15 +1,16 @@
 /* LINK FUNCTIONS */
 
 const go_to_get_all_products = () => {
-    window.location.href = "../public/get_all_products.html";
+    // window.location.href = "../public/get_all_products.html";
+    window.location.href = "./get_all_products.html";
 }
 
 const go_to_sign_up = () => {
-    window.location.href = "../public/sign_up.html";
+    window.location.href = "./sign_up.html";
 }
 
 const go_to_panel_admin = () => {
-    window.location.href = "../public/panel_admin.html";
+    window.location.href = "./panel_admin.html";
 }
 
 /* USER LOGIN */
