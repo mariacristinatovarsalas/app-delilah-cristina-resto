@@ -209,10 +209,16 @@ const make_order = () => {
         product_cant = document.getElementById(product.id + "divcanto").innerHTML
         product.description = product_cant + "x" + product.code
         product_description = product.description
-        var product_object = {id: product_id, cant: product_cant, description: product_description}
-        products_array_to_post.push(product_object)
+        
+       
+        product.cant = product_cant 
 
-        product.cant = product_cant
+        if(product.cant !== "0") {
+            var product_object = {id: product_id, cant: product_cant, description: product_description}
+       products_array_to_post.push(product_object)
+
+        }
+       
     })
 
     console.log(array_products_ordered_)

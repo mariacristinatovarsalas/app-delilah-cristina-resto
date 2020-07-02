@@ -82,6 +82,12 @@ const print_order_status = () => {
         product_price.setAttribute('class', 'product_price')
      
         // PRODUCT CANT
+        
+        if(product.cant == "0") {
+            var product_container = document.getElementById("product_container_id" + product.id)
+            product_container.style.display = "none"
+        }
+
         var cant_div_id = product.id + "divcanto"
         var product_cant = document.createElement("DIV")
         product_cant.setAttribute("id", cant_div_id)

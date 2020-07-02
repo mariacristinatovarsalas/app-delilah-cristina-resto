@@ -21,21 +21,16 @@ Open GitBash terminal in the folder where the project's going to be cloned Write
 
 II) To initiate servers:
 
-a. Backend Server
-
-1) Execute 'npm install' command 
-2) Execute 'npm start' command
-
-b. Database Server
+a. Database Server
 
 1) Install and open MySQL Workbench and make a connection to database server.
 2) Import and execute the sql script that is inside BD folder of this project
 
+b. Backend Server and open browser 
 
+1) Execute 'npm install' command 
+2) Execute 'npm start' command
 
-FRONTEND <------------------------------------------
-
-Open 'src' folder and open 'index.html' file with VS Live Server. 
 
 NOTE: to execute ADMIN actions it is necessary to use the credentials of the only indicated admin in the database as the following.
 
