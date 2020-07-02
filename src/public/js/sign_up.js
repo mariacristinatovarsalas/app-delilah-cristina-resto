@@ -1,11 +1,13 @@
 /* LINK FUNCTIONS */
 
 const go_to_created_user_notification = () => {
-    window.location.href = "../public/created_user_notification.html";
+    // window.location.href = "../public/created_user_notification.html";
+    window.location.href = "./created_user_notification.html";
 }
 
 const go_to_login = () => {
-    window.location.href = "../public/index.html";
+    // window.location.href = "../public/index.html";
+    window.location.href = "./index.html";
 }
 
 

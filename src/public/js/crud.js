@@ -3,20 +3,24 @@
 /* LINK FUNCTIONS */
 
 const go_to_crud = () => {
-    window.location.href = "../public/crud.html";
+    // window.location.href = "../public/crud.html";
+    window.location.href = "./crud.html";
 }
 
 const go_to_get_all_users = () => {
-    window.location.href = "../public/get_all_users.html";
+    // window.location.href = "../public/get_all_users.html";
+    window.location.href = "./get_all_users.html";
     document.getElementById("go_to_users_btn").style.backgroundColor = "white"
 }
 
 const go_to_panel_admin = () => {
-    window.location.href = "../public/panel_admin.html";
+    // window.location.href = "../public/panel_admin.html";
+    window.location.href = "./panel_admin.html";
 }
 
 const go_to_login = () => {
-    window.location.href = "../public/index.html";
+    // window.location.href = "../public/index.html";
+    window.location.href = "./index.html";
 }
 
 

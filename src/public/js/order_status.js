@@ -8,15 +8,18 @@ document.addEventListener('DOMContentLoaded', function() {
 /* LINK FUNCTIONS */
 
 const go_to_get_all_products = () => {
+    // window.location.href = "./get_all_products.html";
     window.location.href = "./get_all_products.html";
 }
 
 const go_to_order_status = () => {
-    window.location.href = "../public/order_status.html";
+    // window.location.href = "../public/order_status.html";
+    window.location.href = "./order_status.html";
 }
 
 const go_to_login = () => {
-    window.location.href = "../public/index.html";
+    // window.location.href = "../public/index.html";
+    window.location.href = "./index.html";
 }
 
 /* PRINT ORDER STATUS */
@@ -65,6 +68,7 @@ const print_order_status = () => {
         // PRODUCT CONTAINER
         var product_container = document.createElement("DIV")
         product_container.setAttribute('class', 'product_container')
+        product_container.setAttribute('id', "product_container_id" + product.id)
         
         // PRODUCT IMG
         var product_img = document.createElement("IMG")
@@ -82,17 +86,17 @@ const print_order_status = () => {
         product_price.setAttribute('class', 'product_price')
      
         // PRODUCT CANT
-        
-        if(product.cant == "0") {
-            var product_container = document.getElementById("product_container_id" + product.id)
-            product_container.style.display = "none"
-        }
 
         var cant_div_id = product.id + "divcanto"
         var product_cant = document.createElement("DIV")
         product_cant.setAttribute("id", cant_div_id)
         product_cant.setAttribute("class", "div_cant_order_check div_cant")
         product_cant.innerHTML = product.cant
+
+       
+        if(product.cant == "0") {
+            product_container.style.display = "none"
+        }
 
         // ASSIGN CHILDREN TO PARENTS
         product_container.appendChild(product_name)

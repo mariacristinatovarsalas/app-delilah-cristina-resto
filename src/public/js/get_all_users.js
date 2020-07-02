@@ -8,16 +8,19 @@ document.addEventListener('DOMContentLoaded', function() {
 /* LINK FUNCTIONS */
 
 const go_to_panel_admin = () => {
-    window.location.href = "../public/panel_admin.html";
+    // window.location.href = "../public/panel_admin.html";
+    window.location.href = "./panel_admin.html";
     document.getElementById("pedidos_btn").style.backgroundColor = "transparent"
 }
 
 const go_to_crud = () => {
-    window.location.href = "../public/crud.html";
+    // window.location.href = "../public/crud.html";
+    window.location.href = "./crud.html";
 }
 
 const go_to_login = () => {
-    window.location.href = "../public/index.html";
+    // window.location.href = "../public/index.html";
+    window.location.href = "./index.html";
 }
 
 /* GET CURRENT DATE FOR HEADER */
